@@ -1,7 +1,7 @@
 def run_guessing_game
   number = rand(6) + 1
+  number.to_s
   guess = gets.chomp
-  guess.to_i
   if guess == number
     puts "You guessed the number!"
   elsif guess == "exit"
